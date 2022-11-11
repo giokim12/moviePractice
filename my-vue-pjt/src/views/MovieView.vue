@@ -24,7 +24,7 @@ export default {
   },
   methods:{
     getMovieList() {
-      const API_KEY = '68713b7a90b1232e24d3b1ef15246cba'
+      const API_KEY = ''
       const URL = 'https://api.themoviedb.org/3/movie/top_rated?'
       let params = {
         api_key: API_KEY,

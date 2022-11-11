@@ -37,7 +37,7 @@ export default {
   },
   methods: {
     getWeather() {
-      const API_KEY = 'ecd3c53b7ca0cba2390fa21a07e38535'
+      const API_KEY = ''
       const URL = 'https://api.openweathermap.org/data/2.5/weather?'
       let params = {
         q: 'seoul',

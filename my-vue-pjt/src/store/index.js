@@ -19,15 +19,15 @@ export default new Vuex.Store({
       switch (weather) {
         case "clear sky": // if (x === 'value1')
           return state.movieList.filter(
-            (movie) => movie.genre_ids.includes(28) === true
+            (movie) => movie.genre_ids.includes(28) === true //액션
           );
         case "few clouds":
           return state.movieList.filter(
-            (movie) => movie.genre_ids.includes(28) === true
+            (movie) => movie.genre_ids.includes(12) === true //어드벤쳐
           );
         case "broken clouds":
           return state.movieList.filter(
-            (movie) => movie.genre_ids.includes(28) === true
+            (movie) => movie.genre_ids.includes(16) === true //애니메이션
           );
         case "shower rain":
           return state.movieList.filter(
@@ -35,11 +35,11 @@ export default new Vuex.Store({
           );
         case "rain":
           return state.movieList.filter(
-            (movie) => movie.genre_ids.includes(28) === true
+            (movie) => movie.genre_ids.includes(878) === true //sf
           );
         case "thunderstorm":
           return state.movieList.filter(
-            (movie) => movie.genre_ids.includes(28) === true
+            (movie) => movie.genre_ids.includes(27) === true //호러
           );
         case "snow":
           return state.movieList.filter(
