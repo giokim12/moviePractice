@@ -3,6 +3,7 @@ import VueRouter from "vue-router";
 import MovieView from "../views/MovieView.vue";
 import RandomView from "../views/RandomView.vue";
 import WatchListView from "../views/WatchListView.vue";
+import MovieDetailView from "../views/MovieDetailView.vue";
 
 Vue.use(VueRouter);
 
@@ -22,6 +23,16 @@ const routes = [
     name: "watch",
     component: WatchListView,
   },
+  {
+    path: "/",
+    name: "main",
+    component: MovieView,
+  },
+  {
+    path: "/detail/:id",
+    name: "detail",
+    component: MovieDetailView,
+  }
   // {
   //   path: "/about",
   //   name: "about",

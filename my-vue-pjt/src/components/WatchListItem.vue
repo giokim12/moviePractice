@@ -1,14 +1,17 @@
 <template>
   <div>
-    <!-- 워치리스트아이템뷰 -->
-    <span 
-      v-if="watch"
-      @click= 'updateWatchStatus'
-      :class = "{'is-seen' : watch.isSeen }"
-    >
-      {{ watch.title }}
-    <!-- {{ watch.isSeen}} -->
-    </span>
+
+    <ul class="list-group list-group">
+      <li 
+        class="list-group-item"
+        v-if="watch"
+        @click= 'updateWatchStatus'
+        :class = "{'is-seen change-colour list-group-item-secondary' : watch.isSeen }"  
+      >
+        {{ watch.title }}
+      </li>
+
+    </ul>
   </div>
 </template>
 

@@ -1,15 +1,19 @@
 <template>
   <div>
-    <!-- 와치리스트폼 컴포넌트임 -->
-    <div>
+
+    <div class="input-group mb-3 movie-form">
       <input 
-        type="text"
+        type="text" class="form-control" 
+        placeholder="Movie Name" 
+        aria-label="Movie Name" 
+        aria-describedby="button-addon2"
         v-model='watchTitle'
         @keyup.enter='createWatch'
       >
-      <button>Add</button>
+      <div class="input-group-append">
+        <button class="btn btn-outline-secondary" type="button" id="button-addon2">ADD</button>
+      </div>
     </div>
-    
   </div>
 </template>
 
@@ -31,5 +35,7 @@ export default {
 </script>
 
 <style>
-
+  .movie-form {
+    width: 50%;
+  }
 </style>
