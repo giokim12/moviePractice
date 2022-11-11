@@ -1,7 +1,5 @@
 <template>
-  <div>
-    <h1>MovieView 페이지임</h1>
-    <!-- {{ movieList.length }} -->
+  <div class="container">
     <div class ="row">
       <MovieCardVue
         v-for="(movie, idx) in movieList"
@@ -30,7 +28,7 @@ export default {
       const URL = 'https://api.themoviedb.org/3/movie/top_rated?'
       let params = {
         api_key: API_KEY,
-        language: 'en-US',
+        language: 'ko-KR',
         // page: 1
       }
       axios.get(URL, {params})

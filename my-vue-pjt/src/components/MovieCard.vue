@@ -3,11 +3,11 @@
     {{ movie}}
   </div> -->
   <div class="col-4">
-    <div class="card" style="width: 18rem;">
-      <img :src="imgPath" class="card-img-top" alt="...">
+    <div class="card shadow-sm mb-5 bg-white rounded">
+      <img :src="imgPath" class="card-img-top rounded" height="500px" alt="...">
       <div class="card-body">
-        <h5 class="card-title">{{ movie.title }}</h5>
-        <p class="card-text">{{ movie.overview }}</p>
+        <h5 class="card-title font-weight-bold text-left">{{ movie.title }}</h5>
+        <p class="card-text overview text-left">{{ movie.overview }}</p>
       </div>
     </div>
   </div>
@@ -30,5 +30,12 @@ export default {
 </script>
 
 <style>
-
+.overview {
+  display:-webkit-box; 
+  word-wrap:break-word; 
+  -webkit-line-clamp:4; 
+  -webkit-box-orient:vertical; 
+  overflow:hidden; 
+  text-overflow:ellipsis;
+}
 </style>
