@@ -1,10 +1,20 @@
 <template>
   <div>
     <h1>보고싶은 영화</h1>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+      </div>
+      <div class="col-8">
+        <WatchListFormVue/>
+        <WatchListVue/>
+        <WatchListItemVue/>
+      </div>
+      <div class="col">
+      </div>
+    </div>
+  </div>
 
-    <WatchListFormVue/>
-    <WatchListVue/>
-    <WatchListItemVue/>
   </div>
 </template>
 
