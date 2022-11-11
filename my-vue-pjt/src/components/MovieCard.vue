@@ -2,7 +2,7 @@
   <!-- <div>
     {{ movie}}
   </div> -->
-  <div class="col-4">
+  <div class="col-6 col-lg-4">
     <div class="card shadow-sm mb-5 bg-white rounded">
       <img :src="imgPath" class="card-img-top rounded" height="500px" alt="...">
       <div class="card-body">

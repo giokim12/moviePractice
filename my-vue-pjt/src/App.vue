@@ -3,7 +3,7 @@
     <nav>
       <router-link to="/movies">Movie</router-link> |
       <router-link to="/random">Random</router-link> |
-      <router-link to="/watch">Watch</router-link> |
+      <router-link to="/watch">Watch</router-link>
     </nav>
     <router-view/>
   </div>
