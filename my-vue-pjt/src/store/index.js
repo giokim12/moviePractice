@@ -1,7 +1,7 @@
-import Vue from 'vue'
-import Vuex from 'vuex'
+import Vue from "vue";
+import Vuex from "vuex";
 
-Vue.use(Vuex)
+Vue.use(Vuex);
 
 export default new Vuex.Store({
   state: {
@@ -9,6 +9,10 @@ export default new Vuex.Store({
     watchList: [],
   },
   getters: {
+    randomMovie(state) {
+      const random = Math.floor(Math.random() * state.movieList.length);
+      return state.movieList[random];
+    },
   },
   mutations: {
     GET_MOVIE(state, movieList) {
@@ -41,6 +45,5 @@ export default new Vuex.Store({
       context.commit('UPDATE_WATCH_STATUS', watchItem)
     }
   },
-  modules: {
-  }
-})
+  modules: {},
+});

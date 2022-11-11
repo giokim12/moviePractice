@@ -2,11 +2,13 @@
   <div>
     <h1>MovieView 페이지임</h1>
     <!-- {{ movieList.length }} -->
-    <MovieCardVue
-      v-for="(movie, idx) in movieList"
-      :key="idx"
-      :movie="movie"
-    />
+    <div class ="row">
+      <MovieCardVue
+        v-for="(movie, idx) in movieList"
+        :key="idx"
+        :movie="movie"
+      />
+    </div>
   </div>
 </template>
 
@@ -32,13 +34,13 @@ export default {
         // page: 1
       }
       axios.get(URL, {params})
-      .then((response) => {
-        // console.log(response.data.results)
-        this.$store.dispatch('getMovie', response.data.results)
-      })
-      .catch((error) => {
-        console.log(error)
-      })
+        .then((response) => {
+          // console.log(response.data.results)
+          this.$store.dispatch('getMovie', response.data.results)
+        })
+        .catch((error) => {
+          console.log(error)
+        })
     }
   },
   computed: {

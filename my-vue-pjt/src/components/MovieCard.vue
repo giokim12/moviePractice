@@ -2,8 +2,8 @@
   <!-- <div>
     {{ movie}}
   </div> -->
-  <div>
-    <div class="card " style="width: 18rem;">
+  <div class="col-4">
+    <div class="card" style="width: 18rem;">
       <img :src="imgPath" class="card-img-top" alt="...">
       <div class="card-body">
         <h5 class="card-title">{{ movie.title }}</h5>
