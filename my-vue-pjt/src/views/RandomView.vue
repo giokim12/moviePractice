@@ -1,7 +1,7 @@
 <template>
   <div>
     <h1>랜덤뷰 페이지임</h1>
-    <div class="card " style="width: 18rem;">
+    <div class="card" style="width: 18rem;">
       <img :src="imgPath" class="card-img-top" alt="...">
       <div class="card-body">
         <h5 class="card-title">{{ randomMovie.title }}</h5>
